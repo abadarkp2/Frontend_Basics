@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP Calculator</title>
+    <link rel="stylesheet" href="sip.css">
+            
+        
+    
+</head>
+<body>
+    <h1>   Goal Calculator </h1>
+    <form id="sipForm">
+        <label for="goalAmount">Goal Amount:</label>
+        <input type="number" id="goalAmount" required>
+
+        <label for="lumpsumAmount"></label>
+        <!-- <input type="number" id="lumpsumAmount" required> -->
+        <input type="number" id="lumpsumAmount" placeholder="lumpsumAmount" required>
+
+        <label for="annualRate">Annual Interest Rate (%):</label>
+        <input type="number" id="annualRate" step="0.01" required>
+
+        <label for="years">Investment Period (years):</label>
+        <input type="number" id="years" required>
+        
+        <button type="submit">Calculate</button>
+    </form>
+    <h2 id="result"></h2>
+
+    <script src="sipCalculator.js"></script>
+</body>
+</html>
